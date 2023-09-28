@@ -7,17 +7,24 @@ import moon from '@/app/assets/moon.png'
 import search from '@/app/assets/search.svg'
 import options from '@/app/assets/options.svg'
 
-function Navbar() {
+
+
+function Navbar({background}) {
     const currentDate = new Date()
     const launchDate = new Date(2023, 9, 30, 0, 0, 0)
+    window.addEventListener('scroll',()=>{
+        let ele = document.getElementById('navBar')
+        ele.style.backgroundColor=`rgb(255,255,255,${window.scrollY/1000})`
+    })
+    
   
     return (
         <>
-            <div>
-                <div className='flex justify-between w-2/3 bg-transparent'>
+            <div className={``} id='navBar'>
+                <div className={`flex justify-between w-2/3 bg-inherit`}>
 
                     <div className='flex  fixed gap-3 py-3 bg-inherit w-full  z-50 '>
-                        <div className='flex fixed gap-3 bg-inherit'>
+                        <div className='flex fixed gap-3 bg-inherit w-full'>
 
                             <div className='lg:ml-96 sm:ml-10 md:ml-40'>
                                 <Image src={nasa} width={95} height={95} alt='nothing'/>
@@ -31,24 +38,24 @@ function Navbar() {
                                 PSYCHE
                             </div>
                         </div>
-                        <div className="w-8 h-8 flex gap-5 searchOptions py-1 mt-5 " >
+                        <div className=" h-8 flex gap-5 searchOptions py-1 mt-5 bg-inherit w-full" >
                             <Image src={search} width={60} alt='nothing'/>
                             <Image src={options} width={60} alt='nothing'/>
                         </div>
                     </div>
                 </div>
                 <div className='bouncy  mr-0 pr-0 '>
-                    <Image src={moon} width={2000} />
+                    <Image src={moon} width={2000} alt=''/>
                 </div>
-                <div className='containerGeneral my-auto'>
+                <div className='containerGeneral my-auto '>
                     <div className='text-8xl font-extrabold timeleft' >
                         TIME 
                     </div>
-                    <div className='timeleft text-6xl mt-11 font-light '>
+                    <div className='timeleft text-6xl mt-11 font-light  flex flex-col '>
 
-                        For the first time ever, we are
-                        exploring a world made not of
-                        rock or ice, <b className='font-light text-red-800'>but of metal.</b>
+                        <div className='l1 forTheFirst'>For the first time ever, we are</div>
+                        <div className='l2 forTheFirst'>exploring a world made not of </div> 
+                        <div className='l3 forTheFirst'>rock or ice, <b className='font-light text-red-800'>but of metal.</b></div>
                     </div>
                 </div>
 

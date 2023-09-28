@@ -39,6 +39,10 @@ body {
   background-color:green;
 }
 
+.bkgrd{
+  background-color: rgb(255,255,255);
+}
+
 .bouncy{
   position: absolute;
   bottom: 600px;
@@ -47,14 +51,62 @@ body {
   
   
 }
+.forTheFirst{
+  opacity:0%;
+  animation:appear 2s ease-in-out forwards 
+}
+
+.previmg{
+position:relative;
+top:500px;
+left :100px;
+}
+.nextimg{
+  position:relative;
+  bottom:100px;
+  left:400px;
+}
+
+.l1{
+
+  animation-delay:1s;
+}
+.l2{
+  animation-delay:2s;
+}
+.l3{
+  animation-delay:3s;
+}
+
 @keyframes enter{
   0%{
-    display:none
+    display:none;
   }
 
   100%{
+    
     transform:translateX(-80px) translateY(80px);
     
+  }
+}
+
+@keyframes appear{
+  0%{
+    display:none;
+  }
+  25%{
+    display:block;
+    opacity:25%;
+  }
+  50%{
+    display:block;
+    opacity:50%;
+    transform:translateY(10px);
+  }
+  100%{
+    display:block;
+    opacity:100%;
+    tranform: translateY(13px);
   }
 }
 
@@ -69,12 +121,29 @@ left:400px;
 width:1000px;
 }
 .vid{
+  position:relative;
   top:700px;
 }
 .timeleft{
 position:relative;
 top:300px;
 
+}
+.slides{
+  position:relative;
+  top:992px;
+}
+.rings{
+  position:relative;
+  top:1150px;
+
+}
+.circle {
+  width: 100px; /* Adjust the width and height as needed */
+  height: 100px;
+  border: 2px solid; /* Border style and color */
+  border-radius: 50%; /* Makes the element a circle */
+  
 }
 @media screen and (max-width:576px){
   .timeleft{

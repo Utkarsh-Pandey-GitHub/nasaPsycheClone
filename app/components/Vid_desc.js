@@ -5,7 +5,7 @@ import ReactPlayer from 'react-player'
 function Vid_desc() {
   return (
     <div className='containerGeneral vid flex gap-64'>
-      <iframe src="https://www.youtube.com/watch?v=TgVorJfM8BM" width={500} height={250} frameborder="0"></iframe>
+      <iframe src="https://www.youtube.com/watch?v=TgVorJfM8BM" width={500} height={250} ></iframe>
       <div className=''>
         <b className='text-red-900 '>
           JOURNEY TO A
