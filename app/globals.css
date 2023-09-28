@@ -18,10 +18,86 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  
+  overflow-x: hidden;
+}
+
+.bigBox{
+  position:relative;
+  height:400px;
+  width:400px;
+}
+.smallBox{
+  
+  height:50%;
+  width:50%;
+  transition: 1s ease-in-out forwards;
+  
+}
+.bigBox:hover .smallBox{
+  transform:translate(100%);
+  background-color:green;
+}
+
+.bouncy{
+  position: absolute;
+  bottom: 600px;
+  right: -800px;
+  animation:enter 1s ease-in  forwards;
+  
+  
+}
+@keyframes enter{
+  0%{
+    display:none
+  }
+
+  100%{
+    transform:translateX(-80px) translateY(80px);
+    
+  }
+}
+
+.searchOptions{
+position:absolute;
+left:1400px;
+}
+
+.containerGeneral{
+position:relative;
+left:400px;
+width:1000px;
+}
+.vid{
+  top:700px;
+}
+.timeleft{
+position:relative;
+top:300px;
+
+}
+@media screen and (max-width:576px){
+  .timeleft{
+    position:relative;
+    top:300px;
+    left:-250px
+  }
+  .containerGeneral{
+  width:350px;
+  }
+
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .timeleft{
+    position:relative;
+    top:300px;
+    left:-250px
+  }
+
+  .containerGeneral{
+  width:600px;
+  }
+
+ 
+
 }
