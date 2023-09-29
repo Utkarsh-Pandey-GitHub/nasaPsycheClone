@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -139,12 +141,51 @@ top:300px;
 
 }
 .circle {
-  width: 100px; /* Adjust the width and height as needed */
-  height: 100px;
-  border: 2px solid; /* Border style and color */
+  width: 400px; /* Adjust the width and height as needed */
+  height: 400px;
+  border: 1px solid rgb(95,2,110); /* Border style and color */
   border-radius: 50%; /* Makes the element a circle */
+  /* transition:tranform 1s ease-in; */
+  
   
 }
+.ringi{
+  /* display:none; */
+  animation:fadeIn 1s ease-in forwards;
+}
+.ringi4:hover .ringi2{
+  /* display:none; */
+  animation:fadeIn 1s ease-in forwards 1s;
+
+}
+.ringi4:hover .ringi3{
+  /* display:none; */
+  animation:fadeIn 1s ease-in forwards 2s;
+
+}
+.ringi4:hover .ringi4{
+  display:none;
+  animation:fadeIn 4s ease-in forwards 3s;
+
+} 
+
+@keyframes fadeIn {
+  0%{
+    opacity:0%;
+    transform: scale(0);
+    
+  }
+  100%{
+    
+    opacity:100%;
+    transform: scale(1);
+    
+    
+  }
+}
+
+
+
 @media screen and (max-width:576px){
   .timeleft{
     position:relative;

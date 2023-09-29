@@ -9,27 +9,44 @@ import Rings from './components/Rings'
 
 export default function Home() {
   const [background, setBackground] = useState("bg-transparent")
-  
-  
 
-  
-  
+
+
+
+
   return (
-    <main className='m' onScroll={()=>{setBackground("bg-white")}}>
-      <Navbar  background={background}/>
-      <Vid/>
-      {/* <div className='bg-blue-700 bigBox'>
-        <div className='bg-red-600 smallBox'>
-        </div>
-      </div> */}
-       
-      
+    <main className='m' onScroll={() => { setBackground("bg-white") }}>
+      <Navbar background={background} />
+      <Vid />
+
+
       <div className=' slides ' >
-        <Slides/>
+        <Slides />
       </div>
-      <div className="containerGeneral rings">
-        <Rings/>
+      <div className="containerGeneral rings ">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Rings />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
+        <div className=' rings bg-gradient-to-r from-purple-900 to-red-500 h-32   ' style={{width:window.innerWidth}}>
+
+        </div>
     </main>
   )
 }
