@@ -11,7 +11,7 @@ import options from '@/app/assets/options.svg'
 
 function Navbar({ background }) {
     const currentDate = new Date()
-    const launchDate = new Date(2023, 10, 6, 0, 0, 0)
+    const launchDate = new Date(2023, 10, 6, 3, 8, 36)
     window.addEventListener('scroll', () => {
         let ele = document.getElementById('navBar')
         ele.style.backgroundColor = `rgb(255,255,255,${window.scrollY / 1000})`

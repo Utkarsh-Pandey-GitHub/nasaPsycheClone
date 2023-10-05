@@ -4,9 +4,9 @@ import ReactPlayer from 'react-player'
 
 function Vid_desc() {
   return (
-    <div className='containerGeneral vid flex gap-64'>
-      <iframe src="https://www.youtube.com/watch?v=TgVorJfM8BM" width={500} height={250} ></iframe>
-      <div className=''>
+    <div className='containerGeneral vid flex gap-20'>
+      <iframe width="500" height="315" src="https://www.youtube.com/embed/TgVorJfM8BM?si=6eG3smJCzjL-zNgh&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+      <div className='w-1/3'>
         <b className='text-red-900 '>
           JOURNEY TO A
           METAL WORLD

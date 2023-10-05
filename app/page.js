@@ -5,6 +5,7 @@ import Vid from './components/Vid_desc'
 import Slides from './components/Slides'
 import { useState } from 'react'
 import Rings from './components/Rings'
+import GetInvolved from './components/GetInvolved'
 
 
 export default function Home() {
@@ -15,7 +16,7 @@ export default function Home() {
 
 
   return (
-    <main className='m' onScroll={() => { setBackground("bg-white") }}>
+    <main className='m ' >
       <Navbar background={background} />
       <Vid />
 
@@ -24,29 +25,20 @@ export default function Home() {
         <Slides />
       </div>
       <div className="containerGeneral rings ">
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <Rings />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </div>
-        <div className=' rings bg-gradient-to-r from-purple-900 to-red-500 h-32   ' style={{width:window.innerWidth}}>
 
+        <Rings />
+
+      </div>
+      <div className='flex justify-center  body_getInvolved'>
+        <div className='w-3/4'> 
+
+          <GetInvolved />
         </div>
+
+      </div>
+      <div className=' relative last_band bg-gradient-to-r from-purple-900 to-red-500 h-32 text-white  text-xl lg:pl-48 py-12' style={{ width: window.innerWidth }}>
+        <b>PSYCHE </b>/ JOURNEY TO A METAL WORLD
+      </div>
     </main>
   )
 }

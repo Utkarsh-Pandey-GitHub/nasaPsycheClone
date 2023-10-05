@@ -140,6 +140,39 @@ top:300px;
   top:1150px;
 
 }
+
+.img_getInvolved{
+position:relative;
+right:220px;
+
+
+}
+.free{
+
+animation: free 2s forwards  ease-in-out;
+}
+
+
+@keyframes free{
+  0%{
+    transform:scale(1)
+  }
+  100%{
+  transform:scale(1.1) translate(80px,80px);
+
+  }
+}
+
+.img_getInvolved:hover{
+  
+}
+.body_getInvolved{
+position:relative;
+top:1600px;
+}
+.last_band{
+top:2000px;
+}
 .circle {
   width: 400px; /* Adjust the width and height as needed */
   height: 400px;
@@ -149,26 +182,10 @@ top:300px;
   
   
 }
-.ringi{
-  /* display:none; */
-  animation:fadeIn 1s ease-in forwards;
+
+.ring1{
+  
 }
-.ringi4:hover .ringi2{
-  /* display:none; */
-  animation:fadeIn 1s ease-in forwards 1s;
-
-}
-.ringi4:hover .ringi3{
-  /* display:none; */
-  animation:fadeIn 1s ease-in forwards 2s;
-
-}
-.ringi4:hover .ringi4{
-  display:none;
-  animation:fadeIn 4s ease-in forwards 3s;
-
-} 
-
 @keyframes fadeIn {
   0%{
     opacity:0%;
@@ -195,6 +212,7 @@ top:300px;
   .containerGeneral{
   width:350px;
   }
+  
 
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -207,7 +225,12 @@ top:300px;
   .containerGeneral{
   width:600px;
   }
+  
+  
 
  
 
+}
+@media screen and (min-width:993px){
+  
 }
