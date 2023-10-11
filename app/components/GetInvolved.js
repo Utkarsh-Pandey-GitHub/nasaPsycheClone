@@ -1,30 +1,50 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import gi from '@/app/assets/getInvolved.jpg'
 
 
 
 
 function GetInvolved() {
-    const [free, setFree] = useState("")
+    
+    const myRef = useRef(null)
     useEffect(() => {
-      const g=scrollY
-      if (g>=1000) {
-        setFree("free")
-      }else{
-        setFree("trap")
-      }
-    
-      
-    }, [])
-    
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('giiR')) {
+                        entry.target.classList.remove('giiR');
+                    }
+                    entry.target.classList.add('gii');
+
+                }
+                else {
+                    if (entry.target.classList.contains('gii')) {
+                        entry.target.classList.remove('gii');
+                    }
+                    entry.target.classList.add('giiR');
+                }
+            });
+        },{
+            threshold:0.4
+        });
+
+        if (myRef.current) {
+            observer.observe(myRef.current);
+        }
+
+        return () => {
+            // Clean up the observer when the component unmounts
+            observer.disconnect();
+        };
+    }, []);
 
     return (
         <div className='flex flex-row gap-10 '>
-            <div className={`img_getInvolved w-2/3 ${free}`} >
+            <div className={`img_getInvolved w-2/3 target-element`} id='getInvolvedImg' ref={myRef}>
                 <Image src={gi} />
             </div>
-            <div className='relative w-1/3'>
+            <div className='relative w-1/3' id='getInvolvedText'>
                 <b className='text-red-900 '>
                     JOURNEY TO A
                     METAL WORLD
