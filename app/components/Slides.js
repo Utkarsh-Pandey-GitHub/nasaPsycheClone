@@ -44,7 +44,7 @@ function Slides() {
       </div>
 
 
-      <Image src={imagesArray[i]}  className='w-full' />
+      <Image src={imagesArray[i]}  className='w-screen' width={window.innerWidth}/>
 
 
       <div className='bg-rose-500 w-16 h-16 z-10 absolute bottom-1/3 right-10 rounded-full ' onClick={nextClick}>

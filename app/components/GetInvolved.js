@@ -49,7 +49,7 @@ function GetInvolved() {
                     JOURNEY TO A
                     METAL WORLD
                 </b>
-                <p>
+                <p className='font-extralight'>
                     Deep within the terrestrial planets, including Earth, scientists infer the presence of metallic cores, but these lie unreachably far below the planet's rocky mantles and crusts. The asteroid Psyche offers a unique window into these building blocks of planet formation and the opportunity to investigate a previously unexplored type of world.
                 </p>
                 <div>

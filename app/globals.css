@@ -266,21 +266,32 @@ top:2000px;
 //rings animations
 
 .ringss:nth-child(1){
-animation : r 3s ;
+animation : r 1s ;
 }
 .ringss:nth-child(2){
-animation : r 4s ;
+animation : r 1s ;
 }
 .ringss:nth-child(3){
-animation : r 5.5s ;
+animation : r 1.5s ;
 }
 .ringss:nth-child(4){
-animation : r 7s;
+animation : r 2s;
 }
 .moonss{
-animation: r 4s;
+animation: r 2s;
 }
-
+.sate{
+  animation: sate 1s forwards ease-in-out;
+  
+}
+@keyframes sate{
+  0%{
+    transform:translateX(0px);
+  }
+  100%{
+    transform:translate(190px,4px)
+  }
+}
 
 
 @keyframes r{
@@ -289,5 +300,26 @@ animation: r 4s;
   }
   100%{
   tranform:scale(1)
+  }
+}
+
+.newsblog{
+  position:relative;
+  top:1800px;
+  
+}
+.right_ani{
+transition:right 1s ease-in-out;
+}
+
+.cardAni{
+animation:cardAni 2s forwards;
+}
+@keyframes carAni{
+  0%{
+    transform:scale(2)
+  }
+  100:{
+  transform:scale(1);
   }
 }

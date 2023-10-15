@@ -6,6 +6,7 @@ import Slides from './components/Slides'
 import { useState } from 'react'
 import Rings from './components/Rings'
 import GetInvolved from './components/GetInvolved'
+import NewsBlog from './components/NewsBlog'
 
 
 export default function Home() {
@@ -35,6 +36,10 @@ export default function Home() {
           <GetInvolved />
         </div>
 
+      </div>
+      <div className='newsblog'>
+        <NewsBlog/>
+        
       </div>
       <div className=' relative last_band bg-gradient-to-r from-purple-900 to-red-500 h-32 text-white  text-xl lg:pl-48 py-12' style={{ width: window.innerWidth }}>
         <b>PSYCHE </b>/ JOURNEY TO A METAL WORLD

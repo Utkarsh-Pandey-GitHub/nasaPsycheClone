@@ -1,9 +1,18 @@
+import Image from 'next/image'
 import React from 'react'
+import transformers from '@/app/assets/transformers.jpeg'
 
-function NewsCard() {
+function NewsCard({ data,imgsrc }) {
   return (
-    <div>
+    <div className='w-1/6  border-orange-500 box-border cardAni' style={{ width: "26vw" }}>
       
+      {/* <Image src={imgsrc?imgsrc:transformers} width={innerWidth*0.26} height={innerHeight*0.25}/> */}
+      <img src={imgsrc?imgsrc:transformers} alt="" srcset="" />
+
+      
+      
+      <b><i>{data ? data : ""}</i></b>
+
     </div>
   )
 }
