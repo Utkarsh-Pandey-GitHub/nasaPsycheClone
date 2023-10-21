@@ -323,3 +323,40 @@ animation:cardAni 2s forwards;
   transform:scale(1);
   }
 }
+.cardSwipe{
+animation:cSwipe 3s ease-in-out  ;
+}
+.child:nth-child(1) {
+  trasition:scale(2);
+  animation-delay: 0s;
+}
+
+.child:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.child:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.child:nth-child(4) {
+  animation-delay: 3s;
+}
+.child:nth-child(n){
+animation-delay:3s;
+}
+@keyframes cSwipe{
+  0%{
+  position:relative;
+  right:60px;
+  float:left;
+  opacity:0.2
+  }
+  
+
+  100%{
+  position:relative;
+  right:0px;
+  opacity:1;
+  }
+}

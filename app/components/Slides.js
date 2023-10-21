@@ -43,8 +43,10 @@ function Slides() {
         <Image src={leftArrow} height={10} width={30} className='m-4'/>
       </div>
 
+      <div className='h-1/3'>
 
-      <Image src={imagesArray[i]}  className='w-screen' width={window.innerWidth}/>
+      <Image src={imagesArray[i]}   width={window.innerWidth}/>
+      </div>
 
 
       <div className='bg-rose-500 w-16 h-16 z-10 absolute bottom-1/3 right-10 rounded-full ' onClick={nextClick}>
