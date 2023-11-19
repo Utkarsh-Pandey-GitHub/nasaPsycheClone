@@ -90,7 +90,7 @@ function Rings() {
                     WHERE ARE WE NOW?
 
                 </b>
-                <p className='sm:text-xl font-extralight'>
+                <p className='sm:text-xl font-extralight text-black'>
                     A space mission typically has six phases, A-F. The Psyche mission is currently in “Phase D.” In this phase, the mission is focused on instrument and spacecraft assembly, testing and launch.
 
                 </p>

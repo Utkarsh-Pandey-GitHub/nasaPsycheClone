@@ -12,7 +12,7 @@ function NewsCard({ data,imgsrc }) {
 
       
       
-      <b><i>{data ? data : ""}</i></b>
+      <b className='text-black' ><i>{data ? data : ""}</i></b>
 
     </div>
   )

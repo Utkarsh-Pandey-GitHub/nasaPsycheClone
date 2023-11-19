@@ -102,7 +102,7 @@ function Navbar({ background }) {
                     <Image src={moon2} width={2000}  alt='' />
                 </div>
                 <div className='containerGeneral my-auto '>
-                    <div className=' font-extralight timeleft text-2xl' style={{fontFamily: "'Pixelify Sans', cursive"}}>
+                    <div className=' font-extralight text-black timeleft text-2xl' style={{fontFamily: "'Pixelify Sans', cursive"}}>
                         COUNTDOWN TO LAUNCH
                         <br />
                         <br />
@@ -132,9 +132,9 @@ function Navbar({ background }) {
                             </div>
                         </div>
                     </div>
-                    <div className='timeleft text-6xl mt-11 font-light  flex flex-col '>
+                    <div className='timeleft text-black text-6xl mt-11 font-light  flex flex-col '>
 
-                        <div className='l1 forTheFirst'>For the first time ever, we are</div>
+                        <div className='l1 forTheFirst '>For the first time ever, we are</div>
                         <div className='l2 forTheFirst'>exploring a world made not of </div>
                         <div className='l3 forTheFirst'>rock or ice, <b className='font-light text-red-800'>but of metal.</b></div>
                     </div>
