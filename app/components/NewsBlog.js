@@ -10,7 +10,7 @@ function NewsBlog() {
   const last = useRef(null)
   const [data, setData] = useState([]);
 
-  const apiUrl = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=6774ff37230b426c8c77e5f635743bcd';
+  const apiUrl = 'https://newsapi.org/v2/top-headlines?category=science&country=us&apiKey=6774ff37230b426c8c77e5f635743bcd';
   useEffect(() => {
 
     // Make a GET request using the fetch API
@@ -81,9 +81,10 @@ function NewsBlog() {
           <NewsCard />
           <div className='text-red-700 w-1/4'>
 
-            <NewsCard data={"NEWS AND  BLOG"} />
+            <h3 className='text-black text-bold'>NEWS AND  BLOG</h3>
             <p className='text-black mt-40 mb-5'>All News</p>
             <div className='h-1 bg-gradient-to-r from-pink-900 via-red-700 to-amber-400'>
+            <NewsCard data={""} />
 
             </div>
           </div>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import nasa from '@/app/assets/nasa.png'
 import psyche from '@/app/favicon.ico'
-import moon2 from '@/app/assets/moon.png'
+import moon2 from '@/app/assets/aster.png'
 import search from '@/app/assets/search.svg'
 import options from '@/app/assets/options.svg'
 
@@ -98,7 +98,7 @@ function Navbar({ background }) {
                         </div>
                     </div>
                 </div>
-                <div className='bouncy  mr-0 pr-0 '>
+                <div className='bouncy  mr-0 pr-0 ' >
                     <Image src={moon2} width={2000}  alt='' />
                 </div>
                 <div className='containerGeneral my-auto '>

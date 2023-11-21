@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import moon from '@/app/assets/moon.png'
+import moon from '@/app/assets/aster.png'
 import satellite from '@/app/assets/satellite-removebg.png'
 
 
@@ -115,8 +115,8 @@ function Rings() {
                 <Image src={satellite} width={450} height={200} />
 
             </div>
-            <div className='relative -bottom-2  z-10  sm:invisible lg:visible md:invisible' id="moonss" ref={myRef4} >
-                <Image src={moon} width={120} height={100} />
+            <div className='relative -bottom-5  z-10  -left-7 sm:invisible lg:visible md:invisible' id="moonss" ref={myRef4} >
+                <Image src={moon} width={200} height={100} />
             </div>
 
         </div>
