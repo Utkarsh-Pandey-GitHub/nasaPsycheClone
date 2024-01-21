@@ -31,8 +31,7 @@ function NewsBlog() {
         // setData(data.articles)
         console.log(data);
         // console.log(articles);
-      })
-      .catch((error) => {
+      }).catch((error) => {
         console.error('There was a problem with the fetch operation:', error);
       });
 
